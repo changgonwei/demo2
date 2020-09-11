@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/taotao?serverTimezone=UTC
+    username: root
+    password: root
+  devtools:
+    restart:
+      enabled: true
+  thymeleaf:
+    cache: false
+
+
+
+
+
+
+
+
+mybatis:
+  # Mybatis配置Mapper路径
+  mapper-locations: classpath:mapper/*.xml
+    # Mybatis配置Model类对应
+  type-aliases-package: com.example.demo.entity
+
+
+
